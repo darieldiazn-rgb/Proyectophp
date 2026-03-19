@@ -11,13 +11,8 @@
   </head>
   <body>
     <?php 
-$fecha = date("d-m-y");
-$nombre = "Dariel";
-echo "<h1>Hola Mundo desde PHP \"alo\"</h1>";
-echo "<p>Soy <strong>".$nombre."</strong> y hoy es ".$fecha."</p>";
-echo "<small>Este es un texto pequeño</small>";
-?>
 
+?>
 
   </body>
 </html>
