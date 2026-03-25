@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Dariel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/png">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <?php
+    $numero = 32;
+    $numero2 = 3;
+$color = "green";
+    $mayor = 'green';
+    $menor = 'red';
+    $igual = 'blue';  
+
+
+    if($numero < $numero2) {
+    echo "<p style='color: $menor;'>es menor</p>";
+} elseif($numero == $numero2) {
+    echo "<p style='color: $igual;'><strong>Son iguales</strong> </p>";
+} else {
+    echo "<p style='color: $mayor;'><strong>$numero</strong> es mayor que <strong>$numero2</strong> </p>";
+}
+
+///////////////////////////////
+    $numero = 3;
+    $numero2 = 3;
+if($numero < $numero2) {
+    echo "<p style='color: $menor;'>es menor</p>";
+} elseif($numero == $numero2) {
+    echo "<p style='color: $igual;'><strong>Son iguales</strong> </p>";
+} else {
+    echo "<p style='color: $mayor;'><strong>$numero</strong> es mayor que <strong>$numero2</strong> </p>";
+}
+
+//////////////////////////////
+    $numero = 1;
+    $numero2 = 3;
+if($numero < $numero2) {
+    echo "<p style='color: $menor;'><strong>$numero</strong> es menor que <strong>$numero2</strong></p>";
+} elseif($numero == $numero2) {
+    echo "<p style='color: $igual;'><strong>Son iguales</strong> </p>";
+} else {
+    echo "<p style='color: $mayor;'><strong>$numero</strong> es mayor que $numero2 </p>";
+}
+echo "<br/>";
+
+/*$nombre = "Dariel";
+$nombresDeMisAmigos = ['Dariel', 'Darits', 'Daniel'];
+
+
+if(!$nombre == $nombreDeMisAmigos[0]) {
+ echo "Tu no eres mi amigo";
+} elseif($nombre == $nombreDeMisAmigos[1]) {
+ echo "Hola $nombre";
+} elseif($nombre == $nombreDeMisAmigos[2]) {
+  echo "Hola $nombre";
+} else {
+  return "Hola $nombre, jajaj soy yo mismo";
+}
+  */
+$nombre = "Dariel";
+if(!($nombre == 'Dariel')) {
+ echo "Hola Desconocido";
+} else {
+  echo "Hola yop ksjaksjka <br/>";
+}
+//////////////////////////
+$nombre = "Dqariel";
+if(!($nombre == 'Dariel')) {
+ echo "Hola Desconocido <br/>";
+} else {
+  echo "Hola yop ksjaksjka <br/>";
+}
+ /////////////////////
+/* $numeroC = 5;
+ $numeroM = 10;
+ $numerom = 1;
+
+ if(($numeroC < $numeroM) && ($numeroC > $numerom)){
+  echo "Esta dentro de los parametros";
+ } else {
+    echo "No esta en los parametros";
+ }
+*/
+ ////////////////////////////////
+
+
+ $numeroM = 10;
+ $numerom = 1;
+
+ if (!(isset($numeroC))) {
+    echo "que es esta monda";
+ }
+    elseif(($numeroC < $numeroM) && ($numeroC > $numerom)){
+        echo "Está dentro de los parámetros";
+    } else {
+        echo "No está en los parámetros (está fuera de rango)";
+    }
+  echo "<br/ >";
+////
+ $numeroC = 5;
+ $numeroM = 10;
+ $numerom = 1;
+
+ if (!(isset($numeroC))) {
+    echo "que es esta monda";
+ }
+    elseif(($numeroC < $numeroM) && ($numeroC > $numerom)){
+        echo "Está dentro de los parámetros";
+    } else {
+        echo "No está en los parámetros (está fuera de rango)";
+    }
+    echo "<br/ >";
+    ///////
+     $numeroC = 100;
+ $numeroM = 10;
+ $numerom = 1;
+
+ if (!(isset($numeroC))) {
+    echo "que es esta monda";
+ }
+    elseif(($numeroC < $numeroM) && ($numeroC > $numerom)){
+        echo "Está dentro de los parámetros";
+    } else {
+        echo "No está en los parámetros (está fuera de rango)";
+    }
+    /////////////////////////////////////////////////////////
+      echo "<br/ >";
+      echo "<br/ >";
+      echo "<hr/>";
+
+      $dinero =  -100;
+
+      switch($dinero){
+        case ($dinero >= 1 && $dinero <= 199) :
+            echo 'Tienes ', $dinero,'$';
+            break;
+        case ($dinero >= 200 && $dinero <= 400) : 
+            echo "Tienes un negocio de $dinero$ en tus manos";
+            break;
+        case ($dinero <= -1 ) :
+           echo "No tienes nada mamon🤢";
+            break;
+        default :
+        echo 'tienes mas de lo que imagine we';
+      }
+      echo "<br/ >";
+      echo "<br/ >";
+      echo "<hr/>";
+
+////////////////////////////////////////////////////////
+        $cuenta = 0;
+        while($cuenta < 10){
+            echo "$cuenta sigue siendo un numero pequeño <br/>";
+            $cuenta++;
+            if($cuenta == 10){
+                echo 'tienes 10 bro<br/>';
+            } 
+
+        }
+        //////////////////////////////////////////////////////////////////////////
+
+    for ($numero=1;$numero<=10;$numero++){
+        echo'tu numero es ', $numero, "<br/>";
+    }
+
+    echo '<br/>';
+
+    $amigos = ['Dariel', 'Daniel', 'Pedro', 'Darits', 'Sandy', 'Josue'];
+    for ($p=0;$p<6;$p++){
+        echo 'Tu amigo numero ', $p, ' es: ', $amigos[$p], "<br/>";
+    }
+?> 
+
+
+  </body> 
+</html> 
