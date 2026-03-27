@@ -10,6 +10,7 @@
     <script src="main.js"></script>
   </head>
   <body>
+    <h1>PRUEBAS</h1>
     <?php
     $numero = 32;
     $numero2 = 3;
@@ -50,20 +51,6 @@ if($numero < $numero2) {
 }
 echo "<br/>";
 
-/*$nombre = "Dariel";
-$nombresDeMisAmigos = ['Dariel', 'Darits', 'Daniel'];
-
-
-if(!$nombre == $nombreDeMisAmigos[0]) {
- echo "Tu no eres mi amigo";
-} elseif($nombre == $nombreDeMisAmigos[1]) {
- echo "Hola $nombre";
-} elseif($nombre == $nombreDeMisAmigos[2]) {
-  echo "Hola $nombre";
-} else {
-  return "Hola $nombre, jajaj soy yo mismo";
-}
-  */
 $nombre = "Dariel";
 if(!($nombre == 'Dariel')) {
  echo "Hola Desconocido";
@@ -78,17 +65,6 @@ if(!($nombre == 'Dariel')) {
   echo "Hola yop ksjaksjka <br/>";
 }
  /////////////////////
-/* $numeroC = 5;
- $numeroM = 10;
- $numerom = 1;
-
- if(($numeroC < $numeroM) && ($numeroC > $numerom)){
-  echo "Esta dentro de los parametros";
- } else {
-    echo "No esta en los parametros";
- }
-*/
- ////////////////////////////////
 
 
  $numeroM = 10;
@@ -103,36 +79,8 @@ if(!($nombre == 'Dariel')) {
         echo "No está en los parámetros (está fuera de rango)";
     }
   echo "<br/ >";
-////
- $numeroC = 5;
- $numeroM = 10;
- $numerom = 1;
 
- if (!(isset($numeroC))) {
-    echo "que es esta monda";
- }
-    elseif(($numeroC < $numeroM) && ($numeroC > $numerom)){
-        echo "Está dentro de los parámetros";
-    } else {
-        echo "No está en los parámetros (está fuera de rango)";
-    }
-    echo "<br/ >";
-    ///////
-     $numeroC = 100;
- $numeroM = 10;
- $numerom = 1;
-
- if (!(isset($numeroC))) {
-    echo "que es esta monda";
- }
-    elseif(($numeroC < $numeroM) && ($numeroC > $numerom)){
-        echo "Está dentro de los parámetros";
-    } else {
-        echo "No está en los parámetros (está fuera de rango)";
-    }
     /////////////////////////////////////////////////////////
-      echo "<br/ >";
-      echo "<br/ >";
       echo "<hr/>";
 
       $dinero =  -100;
@@ -164,20 +112,44 @@ if(!($nombre == 'Dariel')) {
             } 
 
         }
+         echo "<br/ >";
+    echo "<hr/ >";
         //////////////////////////////////////////////////////////////////////////
 
     for ($numero=1;$numero<=10;$numero++){
         echo'tu numero es ', $numero, "<br/>";
     }
 
-    echo '<br/>';
+    echo "<hr/ >";
 
     $amigos = ['Dariel', 'Daniel', 'Pedro', 'Darits', 'Sandy', 'Josue'];
     for ($p=0;$p<6;$p++){
         echo 'Tu amigo numero ', $p, ' es: ', $amigos[$p], "<br/>";
-    }
+    
+        }
 ?> 
+<h2>Foreach</h2>
+<?php   
 
+    echo "<hr/ >";
+        ///////////////////////////////
+        $amigoss = ['Dariel', 'Daniel', 'Pedro', 'Darits', 'Sandy', 'Josue'];
+        foreach($amigoss as $amigo){
+            echo "mis amigos son: $amigo <br/ >";  
+        }
+        
+        
+        $valores = [1,4,340,102,323];
+        foreach($valores as $valor => $valores){
+            echo "$valor => $valores <br/>";
+        }
 
+        $amigoss = ['Dariel', 'Daniel', 'Pedro', 'Darits', 'Sandy', 'Josue'];
+        foreach($amigoss as $indiceA => $amigo){
+            echo "en la posicion $indiceA de mi array esta $amigo <br/ >";  
+        }
+    echo '<hr/>';
+
+    ?>
   </body> 
 </html> 

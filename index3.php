@@ -20,7 +20,7 @@ if (isset($_POST['n1']) && isset($_POST['n2']) && isset($_POST['op'])) {
 <head>
     <meta charset="UTF-8">
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #f4f4f9; }
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #0404ce; }
         
         /* Contenedor Cuadrado */
         .calculadora {
