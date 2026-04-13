@@ -21,9 +21,64 @@ $numeros = [10,20,30];
 echo sumaArrays(...$numeros);
 echo "<hr/>";
 echo concatenar('Dariel', 'Diaz');
+echo "<hr/>";
+echo multi(2, 5);
+echo "<hr/>";
+////////////////////////
+echo hacer('multi', '1', '9.2');
+//////////////////////////
+# multi
+# div
+# potencia
+# suma
+# resta
+
+echo "<hr/>";
+
+echo sumaDoble(20, 50 , 80, 80);
+
+echo "<hr/>";
+
+echo "producto( ) => ", producto(), "<br/>";
+echo "producto(**) => ", producto(9), "<br/>";
+
+mostrarNumeros(1,3);
+
+echo "<hr/>";
+echo showArray(3, 1, 10,93,900);
+echo "<hr/>";
 
 
+/////////////////////////////////////////////////
+#Funciones Predefinidas Variables 
 
+    define("NOMBRE", "Darieel");
+    $check = defined('NOMBRE');
+    if ($check){
+        echo "Tu nombre es ", NOMBRE;
+    } else {
+        echo "No tienes nombre";
+    }
+    echo "<hr/>";
+
+    define("MI_NOMBRE",  "Dz");
+    $estaVacia = empty(constant('MI_NOMBRE'));
+    $estaDefinida = defined('MI_NOMBRE');
+
+    switch('MI_NOMBRE'){
+
+    case ($estaDefinida && $estaVacia) :
+        echo "No se ha configurado un nombre";
+        break;
+
+    case ($estaDefinida) : 
+        echo "Tu Nombre es ", MI_NOMBRE;
+        break;
+
+        default : 
+        echo 'Debes cargar tu nombre';
+
+    }
 ?>
 
 

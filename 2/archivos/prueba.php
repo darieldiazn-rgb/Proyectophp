@@ -4,19 +4,16 @@
  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>archivos </title>
+<title>Proyecto Dariel</title>
  <link rel="stylesheet" href="./style.css">
  <script src="main.js"></script>
  </head>
 <body>
 
-<?php 
- require('./archivos/funcion1.php');
-
-echo suma(1, 2);
-echo "<hr/>";
-echo concatenar('dariel', 'diaz');
-
-?>
+<form action="procesar.php" method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="usuario">
+    <button type="submit">Enviar</button>
+</form>
  </body>
-</html> 
+</html>
