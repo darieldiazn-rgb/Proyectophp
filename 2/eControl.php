@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Dariel</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./image/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="C:\Users\Usuario\Desktop\Proyectophp\image" type="image/png">
     <script src="main.js"></script>
   </head>
   <body>

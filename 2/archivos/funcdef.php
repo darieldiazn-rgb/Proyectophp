@@ -65,19 +65,7 @@ if($fruta == 'manzana'){
     echo "Tu fruta es una <span style = 'color: red;'>manzana🍎</span>";
 }
 echo '<hr>';
-$fruta = 'NaRANja';
-if (isset($fruta)){
-    $frutaNormalizada = ucfirst(strtolower($fruta));
-    //Para que tome la fruta asi no este con las mayusculass o minusculas 
-    $tipos = match ($frutaNormalizada) {
-    'Manzana'     =>  "Tu fruta es una <span style = 'color: red'>Manzana 🍎</span>",
-    'Naranja'     => "Tu fruta es una <span style = 'color: orange'>Naranja 🍊</span>",
-    'Cambur'     => "Tu fruta es una <span style = 'color: yellow'>Cambur 🍌</span>",
-    'Uva'     => "Tu fruta es una <span style = 'color: purple'>Uva 🍇</span>",
-    'Fresa'     => "Tu fruta es una <span style = 'color: red'>Fresa 🍓</span>",
-    default => 'Tu fruta no esta en nuestras listas, disculpe.'
-    };
-    echo $tipos;
+
 }
 ?>
 

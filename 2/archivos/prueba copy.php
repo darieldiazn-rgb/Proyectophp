@@ -11,11 +11,18 @@
 <body>
 
 <h1>Descubre que posicion juega mi amigo</h1>
-<form action="procesar.php" method="POST">
+<form action="" method="POST">
     <label>Nombre:</label>
-    <input type="text" name="usuario">
-    <button type="submit">Enviar</button>
+   <input type="text" name="usuario" placeholder="Escribe un nombre...">
+        <button type="submit" name="enviar">Enviar</button>
 </form>
+<?php 
+require('./procesar.php');
+
+if(isset($_POST['enviar'])){
+    echo resultadoAmigo();
+}
+?>
 
 
 
@@ -27,10 +34,16 @@
 
 
 <h1>Que fruta tengo?</h1>
-<form action= "procesar2.php" method="POST">
+<form action= "" method="POST">
     <label>Escribe tu fruta</label>
     <input type="text" name="ffruta">
-    <button type="submit">Buscar</button>    
+    <button type="submit" name="frutaEnv">Buscar</button>    
 </form>
+<?php 
+require('./procesar2.php');
+if(isset($_POST['frutaEnv'])){
+    echo resultadoFruta();
+}
+?>
  </body>
 </html>
